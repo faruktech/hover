@@ -1,0 +1,190 @@
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+h2::before {
+    content: '"';
+}
+
+h2::after {
+    content: '"';
+}
+
+p::before {
+    content: '"';
+}
+
+p::after {
+    content: '"';
+}
+
+
+.button-div {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.click-class {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: blue;
+    display: inline-block;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-class::before {
+    content: '';
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.click-class:hover::before {
+    height: 100%;
+}
+
+.button-div2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.click-class2 {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    background-color: blue;
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-class2::before {
+    content: '';
+    height: 100%;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+
+}
+
+.click-class2:hover::before {
+    width: 100%;
+
+}
+
+.button-div3 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.click-class3 {
+    text-decoration: none;
+    font-size: 50px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.click-class3::before {
+    content: '';
+    height: 0;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+
+}
+
+.click-class3:hover::before {
+    height: 100%;
+}
+
+.button-div4 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.click-class4 {
+    text-decoration: none;
+    font-size: 50px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.click-class4::before {
+    content: '';
+    height: 100%;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+
+}
+
+.click-class4:hover::before {
+    width: 100%;
+}
+
+ul {
+    margin-left: 30px;
+    list-style: none;
+}
+
+li {
+    font-size: 30px;
+
+}
+
+li:before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: red;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 10px;
+}
